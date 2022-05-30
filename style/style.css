@@ -1,16 +1,19 @@
 :root {
     --primary-title-color: #212121;
-    --primary-text-colo: #757575;
+    --primary-text-color: #757575;
+    --hover-focus-color: #2196F3;
 }
 
 
 body {
     background: #E5E5E5;
     color: #757575;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+    
+   
 }
-/*---- ИСПРАВИТЬ НАВЕДЕНИЕ И ТАБ, подключить шрифты,выровнять границы цвета фона  секций- и портфолио html+css*/
+/*---- ИСПРАВИТЬ НАВЕДЕНИЕ И ТАБ, подключить шрифты,выровнять границы цвета фона  секций
 /* --------------------------------header----------------------------- */
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -20,20 +23,30 @@ body {
 .logo:focus,
 .address-text:hover,
 .address-text:focus,
-.footer-link:hover,
-.footer-link:focus,
+.footer-contacts:hover,
+.footer-contacts:focus,
 .logo-h:hover,
 .logo-h:focus,
 .logo-f:hover,
 .logo-f:focus {
-    color: #2196F3;
+    color: var(--hover-focus-color);
 }
 
 
 .header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     background: #FFFFFF;
+    text-decoration: none;
 }
+.header a {
+    text-decoration: none;
+}
+
 .logo {
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -43,11 +56,8 @@ body {
 .logo-h {
     color: #000000;
 }
-.site-nav a .contacts {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+
+.site-nav a {    
     color: #212121;
 }
 .contacts {
@@ -57,6 +67,7 @@ ul{
     list-style: none;
 }
 /* ----------------------------------main--------------------------------- */
+
 .title-section,
 .footer {
     background: #2F303A;
@@ -82,6 +93,8 @@ ul{
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    text-decoration: none;
+    
 }
 
 .skills-title {
@@ -128,37 +141,7 @@ ul{
 .team {
     background: #F5F4FA;
 }
-/* ------------------------------------footer----------------------------------*/
-
-.logo-f {
-    color: #FFFFFF;
-}
-.address-text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-.footer-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-/*вторичный цвет фона */
-/* 2F303A */
-/* цвет основного текста*/
-/* color: #212121; */
-/*вторичный цвет*/
-/* color: #757575; */
-/*белый*/
-/* color: #FFFFFF;  */
-/*  цвет фокуса */
-/* background: #2196F3 */
-/* ------------PORTFOLIO-------------------- */
-/* ----------почему кнопки не посередине и проверить их значения-------------------- */
+/* ------------------ main portfolio-------------------- */
 .portfolio-button {
     font-family: inherit;
     font-weight: 500;
@@ -167,13 +150,13 @@ ul{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    cursor: pointer;
     
 }
-/* ------------ почкмц не работает????-------------------- */
 .portfolio-button:hover,    
 .portfolio-button:focus {
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: var(--hover-focus-color);
 }
 .portfolio-title {
     font-weight: 700;
@@ -190,6 +173,27 @@ ul{
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/* ------------------------------------footer----------------------------------*/
+.footer ul {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF; 
+}
+footer .logo-f,
+.address-text {
+    color: #FFFFFF;
+}
+
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer a {
+    text-decoration: none;
+}
+
 
 
 
