@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <!-- Header section -->
     <header class="header">
-      <a class="logo" lang="en" href="./index.html"
-        >Web<span class="logo-h">Studio</span>
-      </a>
+      <a class="logo link" lang="en" href="./index.html">Web<span class="logo-h">Studio</span> </a>
       <nav>
-        <ul class="site-nav">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+        <ul class="link">
+          <li ><a class="header-link link" href="./index.html">Студия</a></li>
+          <li><a class="header-link active-current link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="header-link link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="link">
         <li>
-          <a class="contacts" href="malito:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+          <a class="contacts link" href="malito:info@devstudio.com">info@devstudio.com</a>
         </li>
         <li>
-          <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <!-- Main section -->
     <main>
       <section>
-        <ul>
-            <!-- cursor="pointer" чтото не так-------------------------- -->
-          <li><button class="portfolio-button" type="button" cursor="pointer">Все</button></li>
+        <ul class="link">
+          <!-- cursor="pointer" чтото не так-------------------------- -->
+          <li><button class="portfolio-button" type="button"">Все</button></li>
           <li>
-            <button class="portfolio-button" type="button" cursor="pointer">Веб-сайты</button>
+            <button class="portfolio-button" type="button">Веб-сайты</button>
           </li>
           <li>
-            <button class="portfolio-button" type="button" cursor="pointer">Приложения</button>
+            <button class="portfolio-button" type="button">Приложения</button>
           </li>
           <li>
-            <button class="portfolio-button" type="button" cursor="pointer">Дизайн</button>
+            <button class="portfolio-button" type="button">Дизайн</button>
           </li>
           <li>
-            <button class="portfolio-button" type="button" cursor="pointer">Маркетинг</button>
+            <button class="portfolio-button" type="button">Маркетинг</button>
           </li>
         </ul>
-        <ul>
+        <ul class="link">
           <li>
             <img
               class="image"
@@ -156,23 +157,17 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <a class="logo" lang="en" href="./index.html"
-        >Web<span class="logo-f">Studio</span></a
-      >
-      <address>
-        <ul>
+      <a class="logo link" lang="en" href="./index.html">Web<span class="logo-f">Studio</span></a>
+      <address class="footer-address">
+        <ul class="link">
           <li>
-            <a class="address-text" href="">г. Киев, пр-т Леси Украинки, 26</a>
+            <a class="address-text link" href="">г. Киев, пр-т Леси Украинки, 26</a>
           </li>
           <li>
-            <a class="footer-link" href="malito:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="footer-contacts link" href="malito:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="footer-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>

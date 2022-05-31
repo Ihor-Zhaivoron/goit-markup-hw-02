@@ -6,12 +6,8 @@
 
 
 body {
-    background: #E5E5E5;
     color: #757575;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    
-   
+    font-family: 'Roboto', sans-serif;   
 }
 /*---- ИСПРАВИТЬ НАВЕДЕНИЕ И ТАБ, подключить шрифты,выровнять границы цвета фона  секций
 /* --------------------------------header----------------------------- */
@@ -21,8 +17,6 @@ body {
 .contacts:focus,
 .logo:hover,
 .logo:focus,
-.address-text:hover,
-.address-text:focus,
 .footer-contacts:hover,
 .footer-contacts:focus,
 .logo-h:hover,
@@ -38,13 +32,8 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    background: #FFFFFF;
-    text-decoration: none;
+    background: #FFFFFF;   
 }
-.header a {
-    text-decoration: none;
-}
-
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -57,14 +46,21 @@ body {
     color: #000000;
 }
 
-.site-nav a {    
+.header-link {    
     color: #212121;
 }
 .contacts {
     color: #757575;
 }
-ul{
+.site-nav {
+   
+}
+.active-current {
+    color:#2196F3;
+}
+.link {    
     list-style: none;
+    text-decoration: none;
 }
 /* ----------------------------------main--------------------------------- */
 
@@ -85,16 +81,11 @@ ul{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    text-decoration: none;
-    
 }
 
 .skills-title {
@@ -114,7 +105,6 @@ ul{
 }
 .skills,
 .work {
-    background: #E5E5E5;;
 }
 .work-title,
 .team-title {
@@ -143,7 +133,7 @@ ul{
 }
 /* ------------------ main portfolio-------------------- */
 .portfolio-button {
-    font-family: inherit;
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -167,7 +157,6 @@ ul{
 }
 
 .portfolio-subtitle {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -175,14 +164,17 @@ ul{
 }
 
 /* ------------------------------------footer----------------------------------*/
-.footer ul {
+.footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF; 
 }
-footer .logo-f,
+.footer-address {
+    font-style: normal;
+}
+.logo-f,
 .address-text {
     color: #FFFFFF;
 }
@@ -190,9 +182,7 @@ footer .logo-f,
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
 }
-.footer a {
-    text-decoration: none;
-}
+
 
 
 
