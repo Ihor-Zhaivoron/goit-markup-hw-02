@@ -58,9 +58,11 @@ body {
 .active-current {
     color:#2196F3;
 }
-.link {    
-    list-style: none;
+.link {     
     text-decoration: none;
+}
+.list {
+    list-style: none;
 }
 /* ----------------------------------main--------------------------------- */
 
